@@ -22,8 +22,8 @@ dependencies = [
 packages = ["foo"]
 package-dir = {"" = "src"}
 
-# [tool.setuptools.package-dir]
-# foo = "src/foo"
-
-# [tool.setuptools.packages.find]
-# exclude = ["build", "tests"]
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "pre-commit",
+]
